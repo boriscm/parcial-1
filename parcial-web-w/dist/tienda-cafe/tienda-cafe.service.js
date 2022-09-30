@@ -6,15 +6,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.TiendaCafeModule = void 0;
+exports.TiendaCafeService = void 0;
 const common_1 = require("@nestjs/common");
-const tienda_cafe_service_1 = require("./tienda-cafe.service");
-let TiendaCafeModule = class TiendaCafeModule {
+let TiendaCafeService = class TiendaCafeService {
 };
-TiendaCafeModule = __decorate([
-    (0, common_1.Module)({
-        providers: [tienda_cafe_service_1.TiendaCafeService]
-    })
-], TiendaCafeModule);
-exports.TiendaCafeModule = TiendaCafeModule;
-//# sourceMappingURL=tienda-cafe.module.js.map
+TiendaCafeService = __decorate([
+    (0, common_1.Injectable)()
+], TiendaCafeService);
+exports.TiendaCafeService = TiendaCafeService;
+//# sourceMappingURL=tienda-cafe.service.js.map

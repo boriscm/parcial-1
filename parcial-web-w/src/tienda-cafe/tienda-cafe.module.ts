@@ -12,13 +12,7 @@ import { TiendaCafeService } from './tienda-cafe.service';
 })
 export class TiendaCafeModule {
 
-    constructor(
-        @InjectRepository(TiendaEntity)
-        private readonly tiendaRepository: Repository<TiendaEntity>,
-
-        @InjectRepository(CafeEntity)
-        private readonly cafeRepository: Repository<CafeEntity>
-    ){}
+  
 
 
 }
