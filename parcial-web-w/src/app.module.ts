@@ -4,6 +4,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { CafeModule } from './cafe/cafe.module';
 import { TiendaModule } from './tienda/tienda.module';
+import { TiendaCafeModule } from './tienda-cafe/tienda-cafe.module';
 
 
 
@@ -19,7 +20,7 @@ import { TiendaModule } from './tienda/tienda.module';
      dropSchema: true,
      synchronize: true,
      keepConnectionAlive: true
-  })],
+  }), TiendaCafeModule],
   controllers: [AppController],
   providers: [AppService],
 
